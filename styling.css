@@ -1,6 +1,10 @@
 <!DOCTYPE html>
+<HTML lang="sv"> <!--språk svenska -->
+ <head>
+  <title> styling.css </title>
+ </head>
 body{  /* body css */
-	<HTML lang="sv"> <!--språk svenska -->
+	
 	background-color: #808080;  /* bakrundsfärg globalt */
 
 }
