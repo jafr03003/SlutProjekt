@@ -1,17 +1,12 @@
-<!DOCTYPE html>
-<HTML lang="sv"> <!--språk svenska -->
- <head>
-  <title> styling.css </title>
- </head>
 body{  /* body css */
 	
-	background-color: #808080;  /* bakrundsfärg globalt */
+	background-color: rgba(108, 122, 137, 1)  /* bakrundsfärg globalt */
 
 }
 
 .container{  /* container och genrell css globalt.*/
 	grid-template-columns: 1fr 1fr;  /* kolumner globalt */
-	grid-gap: 20px;  /* grid mellanrum*/
+	grid-gap: 1em;  /* grid mellanrum*/
 	grid-template-rows:100px 100px auto 50px;  /* rader storlek */
 	display:grid;  /*visa grid */
 	grid-template-areas:  /* grid area */
@@ -24,34 +19,34 @@ body{  /* body css */
 header{  /* css i header */
 	grid-area: header;  /* grid area  */
 	padding: auto;  /*padding autmatisk */
-	border: 3px solid black;  /* ramen runt grid */
+	border: 3px solid rgb(0,0,0);  /* ramen runt grid */
 	font-size: 20pt;  /*font storlek */
 	text-align: center;  /* text centrerad*/
-	background-color: #fff;  /* bakgrunds färg vit*/
+	background-color: rgb(255,255,255);  /* bakgrunds färg vit*/
 	border-radius: 20px  /*rundade hörn */
 }
 
 nav{  /* css i navigering*/
-	background-color: #fff;  /* bakgrund färg vit*/
+	background-color: rgb(255,255,255);  /* bakgrund färg vit*/
 	grid-area: nav;  /* grid nav */
-	color: #fff;  /* färg vit */
-	border: 5px solid black;  /*ramen runt grid */
+	color: rgb(255,255,255);  /* färg vit */
+	border: 5px solid rgb(0,0,0);  /*ramen runt grid */
 }
 
 nav ul{  /*css i navigeringslistan */
 	display:grid;  /*visa grid */
 	grid-template-columns:1fr 1fr 1fr 1fr;  /* fyra navigerings fält*/
-	color: #fff;  /*färg vit */
+	color: rgb(255,255,255);  /*färg vit */
 	text-decoration:none;  /*ingen text dekoration */
 }
 
 
 footer {  /* css i footer*/
-  position: absolute;  /* placering aboslut*/
+  position: absolute;  /* placering aboslut*/ /* jo jag vil ha min footer såhär låt mig*/
   bottom: 0;  /*botten av sidan */
   width: 98.75%; /* bredden på grid */
   height: 2.5rem; /*höjd på grid */
-  background-color: #fff; /*bakgrundsfärg vit */
+  background-color: rgb(255,255,255); /*bakgrundsfärg vit */
 }
 
 main{ /* css i vanligam main*/
@@ -59,38 +54,34 @@ main{ /* css i vanligam main*/
 	font-size: 20pt; /* storlek på text */
 }
 
-#main{ /* main id css */
+#main, #main2{ /* main id css */
 	display:grid; /*visa grid */
 	grid-area:main; /* main area css */
 	text-align:center; /*text centrerad */
 	font-size: 20pt; /*storlek på text */
-	background-color: #fff; /* bakgrunds färg vit*/
+	background-color: rgb(255,255,255); /* bakgrunds färg vit*/
 	grid-template-columns:1fr 1fr;	/* två fält*/
 }
 
 #main2{ /* main2 id css */
-	display:grid; /*visa grid */
-	grid-area:main; /* main area css */
-	text-align:center; /*text centrerad */
-	font-size: 20pt; /*storlek på text */
-	background-color: #fff; /* bakgrunds färg vit*/
 	grid-template-columns:1fr;	/* ett fält*/
+	width: 98.75%; /* bredden på grid */
 }
 
 table, tr, th, td{ /*css för allt i tabell */
-	border: 1px solid black; /*svart ram runt */
+	border: 1px solid rgb(0,0,0); /*svart ram runt */
 	border-collapse:collapse; /* border kolliderar*/
 	width: 1950px; /*bredd*/
 	height: 40px; /* höjd*/
 }
 
 tr:nth-child(even){ /*färg jämna */
-	background-color:#808080;
+	background-color:rgba(108, 122, 137, 1);
 }
 
 thead{ /*stolek rubik i tabell */
 	font-size: 150%;
 }
 tr:nth-child(odd){ /*färg ojämn */
-	background-color: #fff;
+	background-color: rgb(255,255,255);
 }
