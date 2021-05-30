@@ -23,15 +23,15 @@
 	</nav> <!-- sluttag nav grid -->
 	
 	<main> <!-- main grid -->
-		<form> <!-- Formulär tagg -->
+		<form action="/action_page.php" method="get"> <!-- Formulär tagg --> 
 			<p> Vilken sida var bäst? </p> <!-- Fråga i formulär --> 
-			<input type="checkbox" id="A" name="alt" value="A"  <!-- typ av formulär, namn och value-->
+			<input type="checkbox" id="dator" name="alt" value="A"  <!-- typ av formulär, namn och value-->
 			<label for="Dator"> Dator</label>		<!-- Alternativ -->
 			<br>		<!-- Radbryt -->
-			<input type="checkbox" id="B" name="alt" value="B"  <!-- typ av formulär, namn och value-->
+			<input type="checkbox" id="Spel konsoler" name="alt" value="B"  <!-- typ av formulär, namn och value-->
 			<label for="Spel konsoler"> Spel konsoler</label> <!-- Alternativ -->
 			<br>	<!-- Radbryt -->
-			<input type="checkbox" id="C" name="alt" value="C"  <!-- typ av formulär, namn och value-->
+			<input type="checkbox" id="Mer Information" name="alt" value="C"  <!-- typ av formulär, namn och value-->
 			<label for="Mer Information"> Mer Information</label> <!-- Alternativ -->
 			<br>	<!-- Radbryt -->
 			<p> Vad tycker du om sidan </p> <!-- Fråga i formulär -->
@@ -45,6 +45,10 @@
 			<input type="radio" id="C" name="alt" value="C"  <!-- typ av formulär, namn och value-->
 			<label for="C"> Skit mannen</label>	 <!-- Alternativ -->
 				<br> <!-- Radbryt -->
+			<label for="textarea">här i kan du skriva</label>  <!-- typ av formulär -->
+			<textarea id="textarea" name="textarea" rows="2" cols="20">			
+			</textarea>	<!-- typ av formulär, namn och id och storlek-->
+				<br> <!-- Radbryt -->
 				<br> <!-- Radbryt -->
 				Vilken spelkonsol är bäst <!-- Fråga i formulär -->
 				<br> <!-- Radbryt -->
@@ -52,8 +56,15 @@
 			<option value="A">Playstation 2</option> <!-- Alternativ -->
 			<option value="B">Nintendo Wii</option> <!-- Alternativ -->
 			<option value="C">Playstation 4</option> <!-- Alternativ -->
-			<option value="D">Xbox 360</option>		<!-- Alternativ -->		
-	 </form>  <!-- Formulär sluttagg -->
+			<option value="D">Xbox 360</option>		<!-- Alternativ -->	
+			</select> <!-- sluttag select-->	
+			<br> <!-- Radbryt -->
+			<br> <!-- Radbryt -->
+			<label for="pass"> Password: </label>  <!-- Lösenord och namn -->	
+			<input type="password" id="pass" name="pass">	 <!-- namn och id för lösenord -->	
+			<br> <!-- Radbryt -->
+			<input type="submit"> <!-- Skicka knapp -->
+	 </form>  <!-- Formulär sluttagg --> 
 		
 	</main> <!-- main grid sluttag -->
 	
