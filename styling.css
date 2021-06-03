@@ -1,3 +1,4 @@
+
 body{  /* body css */
 	
 	background-color: rgba(108, 122, 137, 1)  /* bakrundsfärg globalt */
@@ -18,7 +19,7 @@ body{  /* body css */
 
 header{  /* css i header */
 	grid-area: header;  /* grid area  */
-	padding: auto;  /*padding autmatisk */
+	padding: 10px;  /*padding autmatisk */
 	border: 3px solid rgb(0,0,0);  /* ramen runt grid */
 	font-size: 20pt;  /*font storlek */
 	text-align: center;  /* text centrerad*/
@@ -33,10 +34,10 @@ nav{  /* css i navigering*/
 	border: 5px solid rgb(0,0,0);  /*ramen runt grid */
 }
 
-nav ul{  /*css i navigeringslistan */
+nav > ul{  /*css i navigeringslistan */
 	display:grid;  /*visa grid */
 	grid-template-columns:1fr 1fr 1fr 1fr;  /* fyra navigerings fält*/
-	color: rgb(255,255,255);  /*färg vit */
+	color: rgb(0,0,0);  /*färg vit */
 	text-decoration:none;  /*ingen text dekoration */
 }
 
